@@ -6,35 +6,95 @@
     <title>anime</title>
     <link rel="stylesheet" href="../asset/css/reset.css">
     <link rel="stylesheet" href="../asset/css/style.css">
-    <link rel="stylesheet" href="../JS/main.js">
     <link rel="stylesheet" href="../font/css/all.min.css">
-    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <script src="../JS/main.js"></script>
 </head>
 <body>
-    <div class="container">
-            <header class="header">
-                <div id="logo">
-                    <img src="" alt="Logo">
-                    <span></span>
-                </div><!-- start taskbar -->
-                <nav id="button-taskbar">
-                    <a class="button-taskbar-a" href="#">HOME</a>
-                    <a class="button-taskbar-a" href="#">ABOUT</a>
-                    <a class="button-taskbar-a" href="#">SHOP</a>
-                    <a class="button-taskbar-a" href="#">CHAT</a>
-                    <a class="button-taskbar-a" href="#">EVALUATE</a>
-                </nav>
-                <a href="sign-in-anime.html">
-                    <button class="action-btn" >Sign Up</button>
-                </a>
-            </header>
+<div class="container">
+    <header class="header">
+        <div id="logo">
+            <img src="" alt="Logo">
+            <span></span>
+        </div>
+        <nav id="button-taskbar">
+            <a class="button-taskbar-a" href="#">HOME</a>
+            <a class="button-taskbar-a" href="#">ABOUT</a>
+            <a class="button-taskbar-a" href="#">SHOP</a>
+            <a class="button-taskbar-a" href="#">CHAT</a>
+            <a class="button-taskbar-a" href="#">EVALUATE</a>
+        </nav>
+        <a href="sign-in-anime.html">
+            <button class="action-btn">Sign Up</button>
+        </a>
+    </header>
 
-        <div class="item">Sidebar</div>
-        <div class="item" id="main-content">Content</div>
-        <div class="item">Sidebar</div>
+    <div class="item">Sidebar</div>
+    <div class="item" id="main-content">
+        <button id="gioithieu">nhấp vào để xem phần giới thiệu!</button>
     </div>
+    <div class="item">Sidebar</div>
+</div>
+<script>
+    document.getElementById("gioithieu").addEventListener("click", () => {
+        const content = React.createElement(
+            "div",
+            { style: { margin: "20px", padding: "20px", color: "#000", border: "2px solid #fff", fontWeight: "bold" } },
+            React.createElement('p', null, "Chào mừng bạn đến với anixora - Thế giới của những bộ anime tuyệt vời nhất!\n" +
+                "\n" +
+                "Nếu bạn là một fan cứng của anime, đam mê những câu chuyện kỳ ảo, những trận chiến kịch tính, hay đơn giản chỉ là thích thưởng thức những bộ phim hoạt hình Nhật Bản đầy cảm xúc, thì [Tên Website] chính là điểm đến lý tưởng dành cho bạn! Chúng tôi mang đến cho bạn một kho tàng anime phong phú, từ những tác phẩm kinh điển cho đến các siêu phẩm mới nhất, được cập nhật liên tục để bạn không bỏ lỡ bất kỳ điều gì."),
+            React.createElement('h1', null, "1. Kho Anime Khổng Lồ, Cập Nhật Liên Tục"),
+            React.createElement('p', null, "Tại [Tên Website], chúng tôi tự hào sở hữu một thư viện anime khổng lồ với hàng ngàn bộ phim thuộc nhiều thể loại khác nhau:\n" +
+                "\n" +
+                "Hành động: Những trận chiến hoành tráng, những màn đối đầu đầy căng thẳng.\n" +
+                "\n" +
+                "Phiêu lưu: Những cuộc hành trình khám phá thế giới kỳ ảo và bí ẩn.\n" +
+                "\n" +
+                "Hài hước: Những câu chuyện vui nhộn, hài hước giúp bạn thư giãn.\n" +
+                "\n" +
+                "Tình cảm - Lãng mạn: Những câu chuyện tình yêu cảm động.\n" +
+                "\n" +
+                "Kinh dị - Bí ẩn: Những bộ phim ly kỳ, hấp dẫn đến nghẹt thở.\n" +
+                "\n" +
+                "Học đường, đời thường: Những câu chuyện gần gũi, ý nghĩa về cuộc sống hàng ngày.\n" +
+                "\n" +
+                "Với hệ thống cập nhật tự động, chúng tôi đảm bảo bạn luôn có cơ hội thưởng thức những tập phim mới nhất ngay khi chúng được phát hành tại Nhật Bản."),
+            React.createElement('h1', null, "2. Chất Lượng Hình Ảnh & Âm Thanh Hoàn Hảo"),
+            React.createElement('p', null, "Một trải nghiệm anime tuyệt vời không chỉ đến từ nội dung hấp dẫn mà còn từ chất lượng hình ảnh sắc nét và âm thanh sống động. Chúng tôi cung cấp anime với độ phân giải từ 720p đến 1080p, thậm chí là 4K đối với một số bộ phim đặc biệt, giúp bạn tận hưởng trọn vẹn từng khoảnh khắc."),
+            React.createElement('h1', null, "3. Hỗ Trợ Xem Anime Mọi Lúc, Mọi Nơi"),
+            React.createElement('p', null, "Bạn có thể xem anime trên [Tên Website] bằng bất kỳ thiết bị nào: máy tính, điện thoại, tablet mà không cần phải tải về. Chúng tôi cũng cung cấp tính năng tải xuống để bạn có thể xem phim ngay cả khi không có internet."),
+            React.createElement('h1', null, "4. Cộng Đồng Anime Sôi Động"),
+            React.createElement('p', null, "Không chỉ là một trang web xem anime, [Tên Website] còn là nơi để bạn giao lưu với những người có cùng sở thích. Bạn có thể tham gia vào diễn đàn thảo luận, bình luận về từng tập phim, chia sẻ cảm nhận hoặc đề xuất các bộ anime hay với cộng đồng."),
+            React.createElement('h1', null, "5. Đăng Ký Thành Viên - Nhận Đặc Quyền Độc Quyền"),
+            React.createElement('p', null, "Khi trở thành thành viên của [Tên Website], bạn sẽ nhận được rất nhiều lợi ích:\n" +
+                "\n" +
+                "Xem anime không quảng cáo.\n" +
+                "\n" +
+                "Lưu danh sách anime yêu thích.\n" +
+                "\n" +
+                "Nhận thông báo khi có tập mới.\n" +
+                "\n" +
+                "Bình luận & giao lưu với cộng đồng.\n" +
+                "\n" +
+                "Tham gia các sự kiện & mini game trúng thưởng."),
+            React.createElement('h1', null, "6. Tại Sao Bạn Nên Chọn [Tên Website]?"),
+                React.createElement('p', null, "Miễn phí hoàn toàn: Bạn có thể xem hàng nghìn bộ anime mà không mất phí.\n" +
+                    "\n" +
+                    "Giao diện thân thiện, dễ sử dụng: Chỉ cần vài cú click là bạn có thể tìm thấy bộ phim yêu thích.\n" +
+                    "\n" +
+                    "Tốc độ nhanh, ổn định: Server mạnh giúp bạn xem phim mượt mà không lo giật lag.\n" +
+                    "\n" +
+                    "Hỗ trợ khách hàng 24/7: Luôn sẵn sàng giải đáp thắc mắc và hỗ trợ người dùng."),
+                    React.createElement('h1', null, "Hãy Bắt Đầu Hành Trình Anime Ngay Hôm Nay!"),
+                    React.createElement('p', null, "Không cần phải chờ đợi lâu hơn nữa, hãy truy cập [Tên Website] ngay bây giờ để khám phá thế giới anime rộng lớn! Hãy cùng nhau tận hưởng những phút giây giải trí tuyệt vời, đắm chìm trong những câu chuyện đầy cảm xúc và kết nối với những người yêu anime trên toàn thế giới.\n" +
+                        "\n" +
+                        "📌 [Tên Website] - Nơi mà anime sống động hơn bao giờ hết! Chúc bạn có những giây phút xem phim vui vẻ!")
+        );
+
+        const root = ReactDOM.createRoot(document.getElementById("main-content"));
+        root.render(content);
+    });
+</script>
 </body>
 </html>

@@ -2,5 +2,9 @@
     "name": "node-red-project",
     "description": "A Node-RED Project",
     "version": "0.0.1",
-    "private": true
+    "private": true,
+    "devDependencies": {
+        "webpack": "^5.98.0",
+        "webpack-cli": "^6.0.1"
+    }
 }

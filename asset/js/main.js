@@ -1,6 +1,4 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import animeData from "./animeData.js"; // Đảm bảo file `animeData.js` được import đúng
+import animeData from "./animeData";
 
 const AnimeList = ({ animes }) => {
     return (
@@ -39,8 +37,7 @@ const AnimeList = ({ animes }) => {
     );
 };
 
-const button =({})=>{
-}
+var button=function (evnt){addEventListener('click', function(e){})}
 
 const root = ReactDOM.createRoot(document.getElementById("main-content"));
 root.render(<App />);

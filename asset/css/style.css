@@ -46,9 +46,10 @@ body::before {
   flex-grow: 1;
   width:45%;
   height: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tao do bong cho taskbar */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3); /* Tao do bong cho taskbar */
   margin-top: 10px;
   border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .header {
   height: 100px; /* Chieu cao thanh taskbar */

@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Triệu hồi React JS -->
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-</head>
-<body>
-    <div id="root"></div>
-    <script type="text/babel">
-        const animeData = [
+const animeData = [
             {
                 title_h1: "Naruto",
                 introduction_p: "Naruto là một bộ manga và anime nổi tiếng thuộc thể loại hành động, phiêu lưu, giả tưởng do Masashi Kishimoto sáng tác. Câu chuyện xoay quanh Uzumaki Naruto, một cậu bé mồ côi với ước mơ trở thành Hokage – người lãnh đạo mạnh nhất làng Lá (Konoha). Naruto mang trong mình Cửu Vĩ Hồ Ly (Kurama), điều khiến cậu bị dân làng xa lánh. Dù vậy, nhờ sự kiên trì, tình bạn và nỗ lực không ngừng, cậu dần trở thành một ninja vĩ đại, bảo vệ những người quan trọng đối với mình.",
@@ -228,6 +214,3 @@
         // Render App vào #root
         const root = ReactDOM.createRoot(document.getElementById('root'));
         root.render(<App />);
-    </script>
-</body>
-</html> 

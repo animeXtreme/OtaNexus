@@ -5,6 +5,7 @@ body {
   background-position: center; /* Can giua anh nen */
   background-repeat: no-repeat; /* Khong lap lai anh nen */
   background-attachment: fixed; /* Co dinh anh nen khi cuon trang */
+  font-weight: bold;
 }
 /* Tao lop phu lam mo anh nen */
 body::before {
@@ -126,4 +127,10 @@ nav a:focus {
   align-items: center;
   flex-direction: column;
   margin: 15px;
+}
+.item {
+  padding-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tao do bong cho taskbar */
+  margin-top: 10px;
+  padding: 20px;
 }

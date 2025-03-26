@@ -212,5 +212,12 @@ const animeData = [
         }
 
         // Render App vào #root
-        const root = ReactDOM.createRoot(document.getElementById('root'));
+        function render() {
+            return (
+                <div>
+                    <button></button>
+                </div>
+            )
+        }
+        const root = ReactDOM.createRoot(document.getElementById('main-content'));
         root.render(<App />);

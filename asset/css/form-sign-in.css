@@ -1,112 +1,102 @@
-body{
-    background-image: url(../img/gay.jpg);
+body {
     width: 100%;
     height: 100%;
+    background-image: url(../img/gay.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    font-family:"Lucida Grande", Helvetica, Arial, sans-serif;
-    overflow : hidden;
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+    overflow: hidden;
 }
+
 .container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: transparent;
-    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
+
 .container h1 {
-    text-align: center;
-    border-bottom: black solid 2px;
-}
-.sign-in-box {
-    width: 500px;
-    text-align: center;
     margin-bottom: 20px;
-    border-radius: 10px;
-    border: none;
+    font-size: 2rem;
+    color: #333;
 }
 
-.container #email {
+.form-group {
+    margin-bottom: 15px;
     width: 100%;
-    display: block;
-    background-color: transparent;
-    text-align: center;
-    border: none;
-}
-.container #email:focus {
-    outline: none;
-    box-shadow: none;
-    border-bottom: black solid 2px;
-
 }
 
-.container #password {
+.form-group input {
+    box-sizing: border-box;
+    margin-top: 8px;
     width: 100%;
-    display: block;
+    padding: 10px;
     border: none;
-    text-align: center;
-    background-color: transparent;
-}
-.container #password:focus {
-    outline: none;
-    box-shadow: none;
-    border-bottom: black solid 2px;
-}
-.container #password-confirm{
-    width: 100%;
-    text-align: center;
-    display: block;
-    border: none;
-    background-color: transparent;
-}
-.container #password-confirm:focus{
-    outline: none;
-    box-shadow: none;
-    border-bottom: black solid 2px;
-}
-.container #username {
-    width: 100%;
-    display: block;
-    border: none;
-    text-align: center;
-    background-color: transparent;
-}
-.container #username:focus {
-    outline: none;
-    box-shadow: none;
-    border-bottom: black solid 2px;
-    background-color: transparent;
-}
-.container #sign-in-button {
-    display: block;
-    margin-top: 10px;
-    background-color: transparent;
-    border: none;
-    color: black;
-    text-align: center;
-    cursor: pointer;
- }
-
-.container #sign-in-button:hover {
-    border: none;
-    border-bottom: 2px solid white;
-    cursor: url("asset/img/custor.png"), auto;
-}
-.form-group input:not([type="radio"]) {
-    width: 200px;
-    height: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
 }
 
-form{
+.form-group input:focus {
+    outline: none;
+    border-color: black;
+}
+
+.gender-group {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+}
+
+.gender-tile {
+    line-height: 30px;
+}
+
+#sign-in-button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#sign-in-button:hover {
+    background-color: #555;
+}
+
+form {
+    display: flex;
     flex-direction: column;
     width: 100%;
-    height: 300px;
-    /*border: 5px solid black;*/
-    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
+.have-account {
+    margin-top: -2px;
+    font-size: 0.9rem;
+    color: #555;
+}
 
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}

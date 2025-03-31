@@ -39,6 +39,7 @@ body {
 }
 
 .form-group input {
+    box-sizing: border-box;
     margin-top: 8px;
     width: 100%;
     padding: 10px;
